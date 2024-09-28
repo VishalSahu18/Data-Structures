@@ -16,6 +16,7 @@ struct TrieNode{
 
 };
 
+
 void insertWord(TrieNode* root,string &word){
 
     TrieNode *currNode = root;
@@ -114,8 +115,10 @@ int main()
 
     string removingWord = "donkey";
     removeWord(root,removingWord);
+    cout<<"word deleted successfully"<endl;
     string findWord = "donkey";
-    searchWord(root, findWord); 
+    searchWord(root, findWord);
+    
 
 return 0;
 }
